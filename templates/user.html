@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>
+			{{user.name}} Profile
+		</title>
+	</head>
+	<body>
+		<div>
+			<img src="http://www.gravatar.com/avatar/{{user.gravatar_id}}?s=100"/>
+		</div>
+		<div>
+			<table class="center">
+				<tr>
+					 <td>Your Name </td>
+					 <td>: {{user.name}} </td>
+				</tr>
+				<tr>
+					 <td>Company Name </td>
+					 <td>: {{user.company}} </td>
+				</tr>
+				<tr>
+					 <td>Location </td>
+					 <td>: {{user.location}} </td>
+				</tr>
+				<tr>
+					 <td>URL </td>
+					 <td>: <a href="{{user.blog}}">{{user.blog}}</a></td>
+				</tr>
+				<tr>
+					 <td>Email address </td>
+					 <td>: <a href="mailto:{{user.email}}">{{user.email}}</a></td>
+				</tr>
+				<tr>
+					 <td>Github Username </td>
+					 <td>: <a href="https://github.com/{{user.login}}">{{user.login}}</a></td>
+				</tr>
+				<tr>
+					 <td>{{user.name}} Public Repos </td>
+					 <td>: <a href="https://github.com/{{user.login}}/repositories">{{user.public_repo_count}}</a></td>
+				</tr>
+				<tr>
+					 <td>{{user.name}} followers </td>
+					 <td>: <a href="https://github.com/{{user.login}}/followers">{{user.followers_count}}</a></td>
+				</tr>
+				<tr>
+					 <td>{{user.name}} is following </td>
+					 <td>: <a href="https://github.com/{{user.login}}/following">{{user.following_count}}</a></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
